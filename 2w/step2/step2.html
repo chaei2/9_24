@@ -6,18 +6,90 @@
     <!-- 화면 크기 조절 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- link css 치면 나옴 -->
     <link rel="stylesheet" href="./style.css" />
     <title>1강</title>
   </head>
 
   <body>
-    <h1>안녕하세요? 저는 감자입니다.</h1>
+    <h1>step2</h1>
+
+    <div>
+      <h2>h2</h2>
+      <p>감자가 먹고 싶은 날, 감자빵</p>
+    </div>
+
+    <!-- 중첩 예시 -->
+    <div>
+      <h3>h3_중첩예시</h3>
+      <p>감자감자</p>
+
+      <div>
+        <h4>h4_안쪽</h4>
+        <p>감자감자감자</p>
+
+        <div>
+          <h5>h5_더 안쪽</h5>
+          <p>감자감자감자감자</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 클래스와 id -->
+    <div id="header">
+      <h1>class 와 id</h1>
+    </div>
+
+    <div class="section">
+      <h2>소개</h2>
+      <p class="text">이 페이지는 class 와 id를 연습하기 위한 예제입니다.</p>
+    </div>
+
+    <div class="section">
+      <h2>설명</h2>
+      <p class="text">
+        class는 여러 요소에 공통적으로 적용할 스타일을 정의할 때 사용하고,
+      </p>
+      <p id="hightlight">
+        id는 특정 요소에만 적용할 스타일을 정의할 때 사용합니다.
+      </p>
+    </div>
+
+    <!-- 박스모델 -->
+
+    <div class="box">
+      <p>이 박스는 박스 모델의 구조를 보여줍니다.</p>
+    </div>
+
+    <!-- 인라인, 블록요소 실습 -->
+    <h1>display: inline</h1>
+    <span class="inline">inline1</span>
+    <span class="inline">inline2</span>
+
+    <h1>display: inline block</h1>
+    <span class="inline-block">inline1-block</span>
+    <span class="inline-block">inline2-block</span>
+
+    <h1>display: block</h1>
+    <span class="block">block1</span>
+    <span class="block">block2</span>
+
     <ol>
       <a href="https://youtu.be/uEC3zTHvVhA?si=buDrtTqb9wUZN9HH">kickback</a>
     </ol>
     <ol>
-      <a href="../index.html">루트 html로 가기</a>
+      <a href="../examples/index.html">루트 html로 가기</a>
     </ol>
+  </body>
 </html>
 
 <!-- 폴더 구조,  /루트 폴더, .현재 폴더, ..부모 폴더 -->
+
+<!-- div: 레이아웃, 코드 관리등을 위해 적절한 div 구조 좋음
+추가적으로 부모, 자식(형제)가짐 -->
+<!-- span: 인라인 요소로 사용, 강조 등 -->
+
+<!-- content: 내용, content와 padding,  border 선, margin은 다른 것과 여백처리 막기 위함임 -->
+
+<!-- css스타일 초기화
+ *,::before,::after -->

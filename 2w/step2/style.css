@@ -1,3 +1,83 @@
+/* css스타일 초기화
+ *,::before,::after
+필요없는 걸 없앰*/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+
+  /* 박스 최대 사이즈가 border-box */
+  box-sizing: border-box;
+}
+
+/* id */
+#header {
+  background-color: lightblue;
+  font-style: italic;
+  color: darkblue;
+}
+
+/* class */
+.section {
+  background-color: blueviolet;
+  font-size: 1.1rem;
+}
+
+.text {
+  color: bisque;
+  font-weight: 700;
+}
+
+#hightlight {
+  background-color: rgb(255, 165, 165);
+  font-weight: 700;
+}
+
+.box {
+  background-color: green;
+  font-size: 16px;
+  font-weight: normal;
+
+  padding: 20px;
+  /* border는 무조건 3가지 속성을 적어야함  (두께, 스타일, 색상) */
+  border: 5px solid black;
+  margin: 30px;
+
+  width: 300px;
+  height: 200px;
+}
+
+/* 자동, 가로로 놓임 */
+.inline {
+  display: inline;
+  background-color: aqua;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 인라인이랑 다르게 width, height 가능 */
+.inline-block {
+  display: inline-block;
+  background-color: rgb(255, 108, 108);
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+}
+
+.block {
+  display: block;
+  background-color: darkorange;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
 body {
   background-color: yellow;
   color: blue;
