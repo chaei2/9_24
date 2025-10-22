@@ -8,13 +8,35 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(228, 234, 240);
+}
+
+.link {
+  margin: 2rem;
+}
+
+a:hover {
+  font-size: 2rem;
+  color: rgb(119, 38, 149);
+}
+
+a {
+  font-size: 1.8rem;
+  color: rgb(155, 135, 235);
+  font-weight: 900;
+  text-decoration: none;
+}
+
 #title {
   margin: 2rem;
   border-bottom: 0.1rem solid black;
 }
 
 .image {
-  object-fit: contain;
+  margin: 2rem;
+  max-width: 20rem;
+  object-fit: cover;
 }
 
 .text-title {
@@ -26,6 +48,7 @@
 
 .text-p {
   /* content: 3rem; */
+
   padding: 0.5rem;
   margin: 2rem;
 }
