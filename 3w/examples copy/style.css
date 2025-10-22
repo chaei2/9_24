@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+
+  /* 박스 최대 사이즈가 border-box */
+  box-sizing: border-box;
+}
+
+#title {
+  margin: 2rem;
+  border-bottom: 0.1rem solid black;
+}
+
+.image {
+  object-fit: contain;
+}
+
+.text-title {
+  color: darkblue;
+  padding: 0.5rem;
+  margin: 2rem;
+  border-left: 0.2rem solid rgb(60, 41, 204);
+}
+
+.text-p {
+  /* content: 3rem; */
+  padding: 0.5rem;
+  margin: 2rem;
+}
+
+#name {
+  padding-bottom: 1rem;
+}
+
+#age {
+  padding-bottom: 1rem;
+}
+
+#school {
+  padding-bottom: 1rem;
+}
