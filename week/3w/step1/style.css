@@ -1,0 +1,89 @@
+/* @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+div {
+  font-size: 18px;
+  /* border-radius: 15px; */
+  border-radius: 10px 0 5px 0;
+  /* 라운드 원으로 하는 방법 */
+  /* border-radius: 50%;
+  margin-top: 100px;
+  margin-left: 40px;
+  padding: 20px; */
+
+  /* 비율 정해줌 */
+  aspect-ratio: 6/2;
+}
+
+.oklch-color1 {
+  text-align: center;
+  background-color: oklch(90% 0.1 240);
+}
+
+.oklch-color2 {
+  text-align: left;
+  background-color: oklch(70% 0.25 140);
+}
+
+.oklch-color3 {
+  text-align: right;
+  background-color: oklch(40% 0.15 320);
+}
+
+.normal {
+  font-style: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+.weigth {
+  font-weight: bold;
+}
+
+.size {
+  font-size: 40px;
+}
+
+.font {
+  font-family: 'Montserrat', sans-serif;
+  /* font-optical-sizing: auto;
+  font-style: normal; */
+  font-weight: 700;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: white;
+  }
+
+  h1 {
+    color: #90caf0;
+  }
+}
+
+body {
+  background-color: light-dark(lightgray, #121212);
+  color: light-dark(white, black);
+}
+
+h1 {
+  color: light-dark(darkblue, #90caf0);
+}
+
+/* @media (max-width: 800px) {
+  body {
+    background-color: rgb(204, 57, 57);
+  }
+
+  h1 {
+    font-size: 24px;
+    color: darkblue;
+  }
+} */
