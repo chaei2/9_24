@@ -1,0 +1,142 @@
+::before ::after {
+  /*box-sizing: 넓이 폭을 쉽게 해주는 친구 */
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 800px;
+  /* margin inline 은 자동으로 적용 */
+  margin-inline: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-block: 10px 10px;
+}
+
+h3 {
+  margin-block: 0px 10px;
+}
+
+.container {
+  background-color: oklch(90% 0.05 200);
+  padding-inline: 20px;
+  margin-bottom: 40px;
+}
+
+.item {
+  border: 2px solid oklch(60% 0.05 30);
+  background-color: oklch(90% 0.05 30);
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.gtc {
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+}
+
+.gtc-lfr {
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dir {
+  flex-direction: column-reverse;
+}
+
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+.order-4 {
+  order: 4;
+}
+.order-5 {
+  order: 5;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.ac {
+  align-content: center;
+}
+
+.h300 {
+  height: 300px;
+}
+
+.ai {
+  align-items: center;
+}
+
+.as-1 {
+  align-self: flex-start;
+}
+.as-2 {
+  align-self: center;
+}
+.as-3 {
+  align-self: end;
+}
+.as-4 {
+  align-self: stretch;
+}
+.as-5 {
+  align-self: baseline;
+}
+
+.gap {
+  gap: 10px;
+}
+
+.jc {
+  justify-content: space-between;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+.grow-2 {
+  flex-grow: 2;
+}
+.grow-3 {
+  flex-grow: 1;
+}
+.grow-4 {
+  flex-grow: 1;
+}
+.grow-5 {
+  flex-grow: 1;
+}
+
+.shrink-1 {
+  width: 200px;
+  flex-shrink: 1;
+}
+.shrink-2 {
+  width: 200px;
+  flex-shrink: 2;
+}
+
+.basis-1 {
+  flex-basis: 300px;
+}
+.basis-2 {
+  flex-basis: 0;
+}
