@@ -9,12 +9,11 @@
 }
 
 #box1 {
+  width: clamp(15rem, 90vw, 50rem);
   padding: 1.5rem 0rem 1.5rem 0rem;
   margin: 3rem auto;
-  top: 50%;
-  left: 50%;
 
-  width: 45rem;
+  width: 50rem;
   background-color: rgb(195, 195, 255);
 }
 
@@ -74,7 +73,7 @@ a {
   /* 덩어리들을 가운데 정렬 */
   /* gap: 0.rem; */
 
-  padding: 0.6rem;
+  padding: 1.5rem;
   margin: 2rem;
 }
 
