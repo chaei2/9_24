@@ -21,6 +21,10 @@ h3 {
   margin-block: 0px 10px;
 }
 
+.green {
+  background-color: green;
+}
+
 .container {
   background-color: oklch(90% 0.05 200);
   padding-inline: 20px;
@@ -45,11 +49,35 @@ h3 {
   grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
 }
 
-.gtc-lfr {
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+.gtr {
+  grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
 }
 
-.dir {
+/* 5개의 영역을 100px로 고정시키는 것임 */
+.gtc-1fr {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.gtr-1fr {
+  /* 5개를 1fr로 지정한다는 뜻 */
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.gtc-100 {
+  grid-template-columns: 100px 100px 100px 100px 100px;
+}
+
+.gc-gr {
+  grid-column: 2/4;
+  grid-row: 3/6;
+}
+
+.ga {
+  grid-area: 3/2/6/4;
+  /* r/c/r/c */
+}
+
+*/ .dir {
   flex-direction: column-reverse;
 }
 
@@ -79,6 +107,10 @@ h3 {
 
 .h300 {
   height: 300px;
+}
+
+.w100 {
+  width: 100px;
 }
 
 .ai {
@@ -139,4 +171,32 @@ h3 {
 }
 .basis-2 {
   flex-basis: 0;
+}
+
+/* item 값 안 준것과 준 것의 차이  */
+.ji {
+  justify-items: center;
+}
+
+.js-s {
+  justify-self: start;
+}
+.js-c {
+  justify-self: center;
+}
+.js-e {
+  justify-self: end;
+}
+.js-str {
+  justify-self: stretch;
+}
+
+.subgrid {
+  grid-area: 3/2/6/4;
+
+  display: grid;
+
+  grid-template-columns: subgrid;
+
+  grid-template-rows: subgrid;
 }
