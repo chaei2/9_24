@@ -1,0 +1,95 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+
+  /* 박스 최대 사이즈가 border-box */
+  box-sizing: border-box;
+}
+
+#box1 {
+  padding: 1.5rem 0rem 1.5rem 0rem;
+  margin: 3rem auto;
+  top: 50%;
+  left: 50%;
+
+  width: 45rem;
+  background-color: rgb(195, 195, 255);
+}
+
+body {
+  background-color: rgb(228, 234, 240);
+}
+
+#image1 {
+  margin: 2rem;
+}
+
+.link {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+a:hover {
+  /* /* 화면 들썩임 방지1 */
+  transform: scale(1.11);
+  /* font-size: 2rem; -> 기존에 쓰던거 말고 scale로 화면 조정*/
+  color: rgb(119, 38, 149);
+}
+
+a {
+  /* 화면 들썩임 방지2 */
+  display: inline-block;
+  transition: transform 160ms ease, color 160ms ease;
+  transform-origin: left center;
+
+  font-size: 1.8rem;
+  color: rgb(155, 135, 235);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+#title {
+  text-align: center;
+  margin: 2rem;
+  border-bottom: 0.1rem solid black;
+}
+
+.text-title {
+  text-align: center;
+  color: darkblue;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  /* border-left: 0.2rem solid rgb(60, 41, 204); */
+}
+
+.text-p {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* 덩어리들을 가운데 정렬 */
+  /* gap: 0.rem; */
+
+  padding: 0.6rem;
+  margin: 2rem;
+}
+
+#name,
+#age,
+#school {
+  /* inline-flex:한 덩어리로 만들어 중앙 정렬 대상이 되게 */
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  padding-bottom: 1rem;
+}
+
+#my_name,
+#my_age,
+#my_school {
+  font-weight: 900;
+}
