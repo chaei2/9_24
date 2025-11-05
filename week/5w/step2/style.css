@@ -1,0 +1,78 @@
+*::before *::after {
+  box-sizing: border-box;
+}
+
+.page-header {
+  position: sticky;
+  top: 0;
+  padding: 16px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  /* 레이어가 맨 위로 오도록 하는 애 */
+  z-index: 10;
+}
+
+.page-header h1 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.page-header p {
+  margin: 0;
+  font-size: 40px;
+  color: #666;
+}
+
+.section {
+  padding: 40px 20px 80px;
+  border-bottom: 3px dashed #e4e4e4;
+}
+
+.section h2 {
+  margin: 0 0 16px;
+}
+.flow {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: oklch(0.65 0.1 250);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.relative {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  background-color: blue;
+}
+
+.abs-wrap {
+  position: relative;
+  padding: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #e4e4e4;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  flex-wrap: warp;
+  min-height: 280px;
+}
+
+.absolute {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: blue;
+}

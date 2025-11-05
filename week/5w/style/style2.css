@@ -1,0 +1,84 @@
+body {
+  max-width: 1200px;
+}
+
+.section {
+  background-color: aqua;
+  padding: 20px 20px 10px 20px;
+  margin-inline: 20px;
+}
+
+.container {
+  background-color: green;
+}
+
+/* 인터랙티브한 화면 만들기 가능 */
+.calc {
+  width: calc(100% - 120px);
+}
+
+/* vw 너비 비례해서 들어감 */
+
+.clamp {
+  width: clamp(300px, 3vw, 500px);
+}
+
+/* 줄어드는건 50%로 최대는 500px */
+.min {
+  width: min(50%, 500px);
+}
+
+.max {
+  width: max(300px, 50%);
+}
+
+.grid {
+  display: grid;
+}
+
+.minmax {
+  grid-template-columns: minmax(450px, 500px);
+}
+
+.item {
+  background-color: yellow;
+  padding: 30px;
+}
+.repeat {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.fit-content {
+  display: grid;
+  grid-template-columns: fit-content(100px) fit-content(400px);
+  gap: 20px;
+}
+
+/* 색 한번에 다 바꾸는 방법(굉장히 유용) */
+
+:root {
+  --primary-color: oklch(80% 0.2 50);
+  --secondary-color: oklch(80% 0.2 200);
+  --triary-color: oklch(80% 0.2 100);
+  --quaternary-color: oklch(80% 0.2 300);
+}
+
+h4 {
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--secondary-color);
+}
+
+.orange {
+  color: var(--triary-color);
+}
+
+span {
+  color: var(--quaternary-color);
+}
