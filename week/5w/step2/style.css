@@ -76,3 +76,51 @@
   left: 30px;
   background-color: blue;
 }
+
+.filler {
+  margin: 16px 0;
+  min-height: 48px;
+  background-color: #e4e4e4;
+}
+
+.page-footer {
+  padding: 60px 20px 120px;
+  color: #666;
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+  right: 16px;
+  bottom: 30px;
+  width: 200px;
+  height: 200px;
+  z-index: 999;
+  background-color: blue;
+}
+
+.sticky-wrap {
+  /* 부모 묶음 */
+  position: relative;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 16px;
+  min-height: 800px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  overflow: auto;
+  max-height: 60vh;
+  background-color: #e4e4e4;
+}
+
+.sticky {
+  position: sticky;
+  top: 16px;
+  align-self: start;
+  background-color: blue;
+}
+
+.sticky-content {
+  margin: 0 0 16px;
+}
