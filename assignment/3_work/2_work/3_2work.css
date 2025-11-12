@@ -8,6 +8,8 @@
 
 .flex {
   display: flex;
+  justify-content: center;
+  /* gap: 1rem; */
 }
 .div {
 }
@@ -15,12 +17,17 @@
 .container {
 }
 
+.between {
+  justify-content: space-between;
+}
+
 .bg-b {
   display: flex;
   align-items: center;
-  padding: 10px 30px;
+  padding: 0.4rem 2.5rem;
   background-color: #000;
-  justify-content: space-between;
+  justify-content: space-around;
+  column-gap: auto;
   z-index: 0;
 }
 
@@ -31,18 +38,28 @@
   border-radius: 5px;
 }
 
+.btn-1 {
+  padding: 5px 15px;
+  cursor: pointer;
+  margin: 2px;
+}
+
 .logo {
+  align-self: center;
   max-height: 30px;
+  margin-right: 1rem;
 }
 
 .nostorke {
-  border: none;
+  /* border: none; */
   background-color: #000;
   color: #fff;
+  min-width: fit-content;
+  border: none;
 }
 
-.lb {
-  border-left: #fff;
+.bd {
+  border-left: 2px solid #ffffff;
 }
 
 .outline {
@@ -59,7 +76,7 @@
 
 .bg-secondary {
   align-items: center;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   background-color: #dadbf1;
   padding: 6rem 10rem;
@@ -71,20 +88,101 @@
   text-align: center;
 }
 
-.research {
+.search {
   display: block;
+  width: 30rem;
+  height: 2rem;
+  padding: 1rem;
+  margin-inline: auto;
   background-color: #fff;
+  border: solid 1px darkgray;
+  border-radius: 0.2rem;
 }
 
-/* 왜 안되누
-.js-s {
-  justify-self: start;
-} */
-
-/*왜 안되누 2 .js-e {
-  justify-self: flex-end;
+.image {
+  max-width: 4rem;
+  max-height: 4rem;
 }
 
-.js-str {
-  justify-self: stretch;
+.grid {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.padding {
+  padding: 4rem;
+}
+
+.box {
+  position: relative;
+}
+
+.h4 {
+  padding-bottom: 0.5rem;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.regular {
+  font-weight: 300;
+  font-size: medium;
+  padding-bottom: 0.5rem;
+}
+
+.small {
+  font-weight: 400;
+  font-size: small;
+}
+
+.blue {
+  color: #4c5fd5;
+}
+
+.white {
+  color: #fff;
+}
+
+/* .grid-2 {
+  display: grid;
+  gap: 5%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  align-items: flex-start;
 } */
+
+.grid-row {
+  grid-template-rows: 1fr 1fr;
+}
+
+.image-2 {
+  width: 2rem;
+}
+
+.end {
+  margin-top: 60px;
+}
+
+.box-2 {
+}
+/* .gap {
+  gap: 4rem;
+} */
+/* .arrow-svg {
+  position: absolute;
+} */
+
+.grid-bot {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-inline: 80px;
+}
+.grid-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
