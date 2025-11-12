@@ -1,0 +1,74 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  margin: 20px;
+}
+
+.contaniner {
+  gap: 0 px;
+  flex-wrap: wrap;
+}
+
+/* top */
+
+.regular-text {
+  font-weight: 400;
+  color: #000;
+}
+
+.bar {
+  background-color: #000;
+  padding: 20px 30px;
+}
+
+.btn.noStroke {
+  border: solid 1px #fff;
+  all: unset;
+  color: #fff;
+  background: #000;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn.palette.primary:hover:not(:disabled) {
+  background: #4c5fd5;
+  color: #fff;
+}
+
+.btn.outline {
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* top under */
+
+.h1.regular-text {
+  padding: 60px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.bg {
+  background-color: #dadbf1;
+}
+
+.research {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  font-size: 12px;
+  text-align: center;
+  color: #dadbf1;
+  background-color: #fff;
+  padding: 15px;
+}
+
+/* 여기에 배경을 넣어야하는데 이름 못 지음 */
+/* 다시 만들어야겠다.. */
