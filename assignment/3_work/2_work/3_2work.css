@@ -6,10 +6,18 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+  .h1.js-c {
+    font-size: 64px;
+    line-height: 60px;
+    margin-bottom: 50px;
+  }
+}
+
 .flex {
   display: flex;
-  justify-content: center;
-  /* gap: 1rem; */
+  /* justify-content: center; */
+  gap: 1rem;
 }
 .div {
 }
@@ -24,9 +32,10 @@
 .bg-b {
   display: flex;
   align-items: center;
-  padding: 0.4rem 2.5rem;
+  padding: 0.4rem 5rem;
   background-color: #000;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: space-between;
   column-gap: auto;
   z-index: 0;
 }
@@ -47,7 +56,7 @@
 .logo {
   align-self: center;
   max-height: 30px;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
 }
 
 .nostorke {
@@ -66,12 +75,14 @@
   border: solid 1px #fff;
   background-color: #000;
   color: #fff;
+  min-width: fit-content;
 }
 
 .primary {
   border: none;
   background-color: #4c5fd5;
   color: #fff;
+  min-width: fit-content;
 }
 
 .bg-secondary {
@@ -83,7 +94,7 @@
 }
 
 .h1 {
-  font-size: 3.3rem;
+  font-size: 80px;
   font-weight: 400;
   text-align: center;
 }
@@ -91,12 +102,13 @@
 .search {
   display: block;
   width: 30rem;
-  height: 2rem;
+  height: 3rem;
   padding: 1rem;
   margin-inline: auto;
   background-color: #fff;
   border: solid 1px darkgray;
   border-radius: 0.2rem;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.3);
 }
 
 .image {
